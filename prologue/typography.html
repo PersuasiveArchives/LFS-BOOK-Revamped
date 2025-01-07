@@ -8,8 +8,7 @@
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL-NS Stylesheets Vsnapshot" />
-    <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
-    "text/css" media="print" />
+    <link rel="stylesheet" href="../stylesheets/lfs-print.css" type="text/css" media="print" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="lfs" id="lfs-12.2">
@@ -22,15 +21,13 @@
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="package-choices.html" title=
-          "Rationale for Packages in the Book">Prev</a>
+          <a accesskey="p" href="package-choices.html" title="Rationale for Packages in the Book">Prev</a>
           <p>
             Rationale for Packages in the Book
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="organization.html" title=
-          "Structure">Next</a>
+          <a accesskey="n" href="organization.html" title="Structure">Next</a>
           <p>
             Structure
           </p>
@@ -39,8 +36,7 @@
           <a accesskey="u" href="preface.html" title="Preface">Up</a>
         </li>
         <li class="home">
-          <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version 12.2">Home</a>
+          <a accesskey="h" href="../index.html" title="Linux From Scratch - Version 12.2">Home</a>
         </li>
       </ul>
     </div>
@@ -49,37 +45,23 @@
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        To make things easier to follow, there are a few typographical
-        conventions used throughout this book. This section contains some
-        examples of the typographical format found throughout Linux From
-        Scratch.
+        To make it easier for you to follow along, we've got some typographical conventions throughout the book. This section will give you some examples so you can see how things are formatted in Linux From Scratch.
       </p>
-      <pre class="userinput"><kbd class=
-      "command">./configure --prefix=/usr</kbd></pre>
+      <pre class="userinput"><kbd class="command">./configure --prefix=/usr</kbd></pre>
       <p>
-        This form of text is designed to be typed exactly as seen unless
-        otherwise noted in the surrounding text. It is also used in the
-        explanation sections to identify which of the commands is being
-        referenced.
+        This is the kind of text that you'll need to type exactly as you see it. It's used for commands, unless we say otherwise. This will also be used in explanations to show which commands we're talking about.
       </p>
       <p>
-        In some cases, a logical line is extended to two or more physical
-        lines with a backslash at the end of the line.
+        Sometimes, we break a longer command into multiple lines. If you see a backslash at the end of a line, that means the command continues onto the next line.
       </p>
-      <pre class="userinput"><kbd class=
-      "command">CC="gcc -B/usr/bin/" ../binutils-2.18/configure \
+      <pre class="userinput"><kbd class="command">CC="gcc -B/usr/bin/" ../binutils-2.18/configure \
   --prefix=/tools --disable-nls --disable-werror</kbd></pre>
       <p>
-        Note that the backslash must be followed by an immediate return.
-        Other whitespace characters like spaces or tab characters will create
-        incorrect results.
+        A quick tip: the backslash needs to be followed immediately by a return. Don't add spaces or tabs, as that could mess things up.
       </p>
-      <pre class="screen"><code class=
-      "computeroutput">install-info: unknown option '--dir-file=/mnt/lfs/usr/info/dir'</code></pre>
+      <pre class="screen"><code class="computeroutput">install-info: unknown option '--dir-file=/mnt/lfs/usr/info/dir'</code></pre>
       <p>
-        This form of text (fixed-width text) shows screen output, usually as
-        the result of commands issued. This format is also used to show
-        filenames, such as <code class="filename">/etc/ld.so.conf</code>.
+        This fixed-width text shows the output you’d typically get on the screen after running a command. It's also how we display filenames, like <code class="filename">/etc/ld.so.conf</code>.
       </p>
       <div class="admon note">
         <img alt="[Note]" src="../images/note.png" />
@@ -87,98 +69,59 @@
           Note
         </h3>
         <p>
-          Please configure your browser to display fixed-width text with a
-          good monospaced font, with which you can distinguish the glyphs of
-          <code class="literal">Il1</code> or <code class="literal">O0</code>
-          clearly.
+          If possible, configure your browser to display fixed-width text using a good monospaced font. This way, you’ll easily distinguish between characters like <code class="literal">Il1</code> or <code class="literal">O0</code>.
         </p>
       </div>
       <p>
         <span class="emphasis"><em>Emphasis</em></span>
       </p>
       <p>
-        This form of text is used for several purposes in the book. Its main
-        purpose is to emphasize important points or items.
+        We use this style to highlight important points or items that need extra attention.
       </p>
       <p>
-        <a class="ulink" href=
-        "https://www.linuxfromscratch.org/">https://www.linuxfromscratch.org/</a>
+        Here’s a hyperlink for you: <a class="ulink" href="https://www.linuxfromscratch.org/">Linux From Scratch website</a>
       </p>
       <p>
-        This format is used for hyperlinks both within the LFS community and
-        to external pages. It includes HOWTOs, download locations, and
-        websites.
+        We use this format for links, both internal within the LFS community and to external sites. For example, it might be used for HOWTOs, download locations, or websites.
       </p>
-      <pre class="userinput"><kbd class=
-      "command">cat &gt; $LFS/etc/group &lt;&lt; "EOF"
+      <pre class="userinput"><kbd class="command">cat &gt; $LFS/etc/group &lt;&lt; "EOF"
 <code class="literal">root:x:0:
 bin:x:1:
 ......</code>
 EOF</kbd></pre>
       <p>
-        This format is used when creating configuration files. The first
-        command tells the system to create the file <code class=
-        "filename">$LFS/etc/group</code> from whatever is typed on the
-        following lines until the sequence End Of File (EOF) is encountered.
-        Therefore, this entire section is generally typed as seen.
+        This format is for creating configuration files. The first command tells the system to create the file <code class="filename">$LFS/etc/group</code> from whatever you type next, until it hits the "EOF" line. Basically, everything you see in this section is what you need to type.
       </p>
       <p>
         <em class="replaceable"><code>&lt;REPLACED TEXT&gt;</code></em>
       </p>
       <p>
-        This format is used to encapsulate text that is not to be typed as
-        seen or for copy-and-paste operations.
+        This is used to show text that shouldn't be typed exactly as it appears, or for copy-pasting.
       </p>
       <p>
         <em class="replaceable"><code>[OPTIONAL TEXT]</code></em>
       </p>
       <p>
-        This format is used to encapsulate text that is optional.
+        This indicates text that is optional.
       </p>
       <p>
-        <a class="ulink" href=
-        "https://man.archlinux.org/man/passwd.5">passwd(5)</a>
+        Here’s an example of a man page reference: <a class="ulink" href="https://man.archlinux.org/man/passwd.5">passwd(5)</a>
       </p>
       <p>
-        This format is used to refer to a specific manual (man) page. The
-        number inside parentheses indicates a specific section inside the
-        manuals. For example, <span class=
-        "command"><strong>passwd</strong></span> has two man pages. Per LFS
-        installation instructions, those two man pages will be located at
-        <code class="filename">/usr/share/man/man1/passwd.1</code> and
-        <code class="filename">/usr/share/man/man5/passwd.5</code>. When the
-        book uses <a class="ulink" href=
-        "https://man.archlinux.org/man//passwd.5">passwd(5)</a> it is
-        specifically referring to <code class=
-        "filename">/usr/share/man/man5/passwd.5</code>. <span class=
-        "command"><strong>man passwd</strong></span> will print the first man
-        page it finds that matches <span class="quote">“<span class=
-        "quote">passwd,</span>”</span> which will be <code class=
-        "filename">/usr/share/man/man1/passwd.1</code>. For this example, you
-        will need to run <span class="command"><strong>man 5
-        passwd</strong></span> in order to read the page being specified.
-        Note that most man pages do not have duplicate page names in
-        different sections. Therefore, <span class="command"><strong>man
-        <em class="replaceable"><code>&lt;program
-        name&gt;</code></em></strong></span> is generally sufficient. In the
-        LFS book these references to man pages are also hyperlinks, so
-        clicking on such a reference will open the man page rendered in HTML
-        from <a class="ulink" href="https://man.archlinux.org/">Arch Linux
-        manual pages</a>.
+        This format refers to a specific man page. The number in parentheses points to a section in the manual. For instance, <span class="command"><strong>passwd</strong></span> has two man pages. As specified by the LFS installation instructions, these pages are located at <code class="filename">/usr/share/man/man1/passwd.1</code> and <code class="filename">/usr/share/man/man5/passwd.5</code>.
+        If the book mentions <a class="ulink" href="https://man.archlinux.org/man//passwd.5">passwd(5)</a>, it's specifically referring to <code class="filename">/usr/share/man/man5/passwd.5</code>. Running <span class="command"><strong>man passwd</strong></span> will print the first man page it finds, usually <code class="filename">/usr/share/man/man1/passwd.1</code>, but to see the specific page mentioned in the book, you’ll need to run <span class="command"><strong>man 5 passwd</strong></span>.
       </p>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="package-choices.html" title=
-          "Rationale for Packages in the Book">Prev</a>
+          <a accesskey="p" href="package-choices.html" title="Rationale for Packages in the Book">Prev</a>
           <p>
             Rationale for Packages in the Book
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="organization.html" title=
-          "Structure">Next</a>
+          <a accesskey="n" href="organization.html" title="Structure">Next</a>
           <p>
             Structure
           </p>
@@ -187,8 +130,7 @@ EOF</kbd></pre>
           <a accesskey="u" href="preface.html" title="Preface">Up</a>
         </li>
         <li class="home">
-          <a accesskey="h" href="../index.html" title=
-          "Linux From Scratch - Version 12.2">Home</a>
+          <a accesskey="h" href="../index.html" title="Linux From Scratch - Version 12.2">Home</a>
         </li>
       </ul>
     </div>
