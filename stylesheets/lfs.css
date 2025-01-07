@@ -179,7 +179,14 @@ div.navheader ul li.prev, div.navfooter ul li.prev {
   text-align: left;
   padding: 0.2em 1em;
   margin-left: .4em;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
 }
+
+div.navheader ul li.prev:hover, div.navfooter ul li.prev:hover {
+  background-color: #f0f0f0;  /* Lighten the background */
+  color: #333; /* Darken the text color */
+}
+
 
 /* Ensure the parent container is positioned relative */
 div.navheader, div.navfooter {
@@ -196,7 +203,14 @@ div.navheader ul li.next, div.navfooter ul li.next {
   right: 0;
   padding: 0.2em 1em;
   margin-right: .4em;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
 }
+
+div.navheader ul li.next:hover, div.navfooter ul li.next:hover {
+  background-color: #f0f0f0;  /* Lighten the background */
+  color: #333; /* Darken the text color */
+}
+
 
 
 div.navheader ul li.home, div.navheader ul li.up,
@@ -206,7 +220,15 @@ div.navfooter ul li.home, div.navfooter ul li.up {
   margin: 0 auto;
   display: block;
   color: #dbddec;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
+
+div.navheader ul li.home:hover, div.navheader ul li.up:hover,
+div.navfooter ul li.home:hover, div.navfooter ul li.up:hover {
+  background-color: #f0f0f0;  /* Lighten the background */
+  color: #333; /* Darken the text color */
+}
+
 
 /* TOC */
 div.toc ul, div.index ul, div.navheader ul, div.navfooter ul {
@@ -651,4 +673,7 @@ p.updated {
 
 .feature-blowfish {
   color: #8E6B23; /* Sienna */
+}
+a {
+  text-decoration: none;
 }
