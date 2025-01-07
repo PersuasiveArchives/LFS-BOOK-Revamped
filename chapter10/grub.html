@@ -75,10 +75,10 @@
             Warning
           </h3>
           <p>
-            Configuring GRUB incorrectly can render your system inoperable
-            without an alternate boot device such as a CD-ROM or bootable USB
-            drive. This section is not required to boot your LFS system. You
-            may just want to modify your current boot loader, e.g.
+            if you're configuring GRUB, it's super important to do it right. Otherwise, you might end up with a system that won't work.
+            If you don't have an alternate boot device, like a CD-ROM or a bootable USB, you might not be able to get into your system.
+            drive. Don't worry, though! This section isn't required to boot your LFS system.
+            You might just want to modify your current boot loader, e.g.
             Grub-Legacy, GRUB2, or LILO.
           </p>
         </div>
@@ -165,10 +165,9 @@ xorriso -as cdrecord -v dev=/dev/cdrw blank=as_needed grub-img.iso</kbd></pre>
             Warning
           </h3>
           <p>
-            The following command will overwrite the current boot loader. Do
-            not run the command if this is not desired, for example, if using
-            a third party boot manager to manage the Master Boot Record
-            (MBR).
+            Please note that the following command will overwrite the current boot loader.
+             This command should only be run if desired; for example
+             , if using a third-party boot manager to manage the Master Boot Record (MBR). 
           </p>
         </div>
         <pre class="userinput"><kbd class=
